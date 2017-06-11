@@ -4,6 +4,7 @@ ravuri@dockerfordevops:~$
 sudo usermod -a -G vboxsf ravuri
 
 
+
 install guest additions in ubuntu
 
 cd /media
@@ -11,6 +12,7 @@ cd /media
 sudo mkdir share
 
 sudo mount -t vboxsf Share /media/share
+
 
 
 sudo apt-get install libapparmor1 aufs-tools ca-certificates
