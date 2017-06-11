@@ -8,6 +8,8 @@ Types of Hypervisors
 In a bare metal hypervisor no OS will be available
 
 
+
+
 Containers - isolate the process 
 Controller - controls the containers
 
