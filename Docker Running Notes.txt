@@ -1,0 +1,50 @@
+https://docs.docker.com/
+
+
+Course errors
+https://gist.github.com
+
+
+Docker image :- Contains everything your service needs to run
+Docker Container :- is a running instance of an image
+They both are Class vs instance of that class
+
+
+virtual machine vs Docker Container
+In Virtual machine Hypervisor facilitate multiple OS
+In Docker, Docker engine host multiple isolated applications 
+
+Benefits Of Docker
+------------------
+Scale up quickly
+Expand development team painlessly
+use what ever technology fits best
+Cross environment consistency
+Docker is a framework
+
+
+docker pull busybox:latest
+
+docker images
+
+docker run --rm busybox:latest /bin/echo "Hello World"
+docker ps -a
+
+docker run busybox:latest /bin/echo "Hello World"
+docker ps -a
+
+docker run -it busybox:latest   --gives interactive command execution
+
+docker rmi <docker_image_id>   - removes docker images
+
+
+
+Docker Registry - used to push and pull docker images
+---------------
+
+
+docker file - its a recipe for building a docker image. Its a blue print
+
+
+
+

@@ -1,0 +1,26 @@
+ravuri@dockerfordevops:~$ 
+
+
+sudo usermod -a -G vboxsf ravuri
+
+
+install guest additions in ubuntu
+
+cd /media
+
+sudo mkdir share
+
+sudo mount -t vboxsf Share /media/share
+
+
+sudo apt-get install libapparmor1 aufs-tools ca-certificates
+
+sudo dpkg -i docker-engine_17.04.0~ce-0~ubuntu-yakkety_amd64.deb
+
+sudo usermod -aG docker ravuri
+
+Check below link for latest Releases
+------------------------------------
+https://github.com/docker/compose/releases/download/1.12.0/docker-compose-Linux-x86_64
+
+curl -L https://github.com/docker/compose/releases/download/1.12.0/docker-compose-Linux-x86_64 > /tmp/docker-compose

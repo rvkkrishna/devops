@@ -1,0 +1,53 @@
+Hypervisor - emulating the hardware in to small chunks for a better usage - compartmentalisation
+Types of Hypervisors
+  -Xen - uses microkernel design to provide services
+  -KVM - kernel based Virtual machine
+  -VMWare ESXi - enterprise-class, type-1 hypervisor for deploying and serving virtual computers 
+  -Hyper-V - native hypervisor to create virtual machines on x86-64 systems
+
+In a bare metal hypervisor no OS will be available
+
+
+Containers - isolate the process 
+Controller - controls the containers
+
+docker swarm and kubernetes are controllers
+LXC Docker is a container
+
+Document :- http://blog.alexellis.io/mutli-stage-docker-builds/
+
+
+https://hub.docker.com/
+
+docker version
+
+docker pull busybox  - install busybox container
+
+docker images - displays the installed docker images
+
+docker run busybox /bin/echo Hello Docker
+
+
+docker run -i -t --name test busybox
+
+docker rm container_id or conatiner_name
+
+docker attach  container_id - attach to a running container
+
+docker run --name apache -p 80:80 ubuntu
+
+To run container as background, but the service as foreground on the container
+------------------------------------------------------------------------------
+docker run -d -p 80:80 ubuntu:apache /usr/sbin/apache2ctl -D FOREGROUND
+
+vi Dockerfile
+docker build
+
+
+
+
+
+
+
+
+
