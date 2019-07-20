@@ -41,9 +41,7 @@ To run container as background, but the service as foreground on the container
 docker run -d -p 80:80 ubuntu:apache /usr/sbin/apache2ctl -D FOREGROUND
 
 vi Dockerfile
-docker build
-
-
+docker build -t
 
 
 
